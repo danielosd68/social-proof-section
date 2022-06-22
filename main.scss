@@ -129,12 +129,40 @@ html {
                     height: 300px;
                     display: flex;
                     justify-content: center;
+                    transform: translateX(3000px);
 
                     .opinion-content {
                         width: 20vw;
                         height: 250px;
                         background-color: $veryDarkMagenta;
                         border-radius: 15px;
+
+                        .opinion-content-top {
+                            display: flex;
+                            align-items: center;
+
+                            .opinion-content-top-image {
+                                margin: 20px;
+
+                                img {
+                                    border-radius: 100%;
+                                }
+                            }
+
+                            .opinion-content-top-name {
+                                color: white;
+
+                                .bottom {
+                                    color: $softPink;
+                                }
+                            }
+                        }
+
+                        .opinion-content-bottom {
+                            margin-left: 20px;
+                            margin-right: 20px;
+                            color: white;
+                        }
                     }
                 }
 

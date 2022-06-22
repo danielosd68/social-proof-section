@@ -110,6 +110,7 @@ html body main .bottom .opinion-container {
   height: 300px;
   display: flex;
   justify-content: center;
+  transform: translateX(3000px);
 }
 
 html body main .bottom .opinion-container .opinion-content {
@@ -117,6 +118,33 @@ html body main .bottom .opinion-container .opinion-content {
   height: 250px;
   background-color: #502050;
   border-radius: 15px;
+}
+
+html body main .bottom .opinion-container .opinion-content .opinion-content-top {
+  display: flex;
+  align-items: center;
+}
+
+html body main .bottom .opinion-container .opinion-content .opinion-content-top .opinion-content-top-image {
+  margin: 20px;
+}
+
+html body main .bottom .opinion-container .opinion-content .opinion-content-top .opinion-content-top-image img {
+  border-radius: 100%;
+}
+
+html body main .bottom .opinion-container .opinion-content .opinion-content-top .opinion-content-top-name {
+  color: white;
+}
+
+html body main .bottom .opinion-container .opinion-content .opinion-content-top .opinion-content-top-name .bottom {
+  color: #ee68a4;
+}
+
+html body main .bottom .opinion-container .opinion-content .opinion-content-bottom {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
 }
 
 html body main .bottom .left,
