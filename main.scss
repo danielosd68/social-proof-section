@@ -17,6 +17,14 @@ html {
         background-repeat: no-repeat, no-repeat;
         background-position: top left, bottom right;
         background-attachment: fixed;
+
+        @media only screen and (max-width:1220px) {
+            background: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
+            background-repeat: no-repeat, no-repeat;
+            background-position: top left, bottom right;
+            background-attachment: fixed;
+        }
+
         overflow-x: hidden;
 
         main {
@@ -32,9 +40,18 @@ html {
                 margin-left: auto;
                 margin-right: auto;
 
+                @media only screen and (max-width:1220px) {
+                    flex-direction: column;
+                }
+
+
                 .left {
                     width: 30vw;
                     margin-top: 25px;
+
+                    @media only screen and (max-width:1220px) {
+                        width: auto;
+                    }
 
                     .title {
                         color: $veryDarkMagenta;
@@ -54,6 +71,12 @@ html {
                     width: 30vw;
                     margin-top: 25px;
 
+                    @media only screen and (max-width:1220px) {
+                        width: auto;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
                     .rate-container {
                         width: 30vw;
                         display: flex;
@@ -61,15 +84,23 @@ html {
                         margin-top: 20px;
                         margin-bottom: 20px;
 
+                        @media only screen and (max-width:1220px) {
+                            width: 80vw;
+                        }
+
                         .rate-content {
-                            width: 25vw;
+                            width: 450px;
                             background-color: $lightgrayishMagenta;
-                            height: 70px;
+                            min-height: 70px;
                             display: flex;
                             justify-content: left;
                             align-items: center;
                             border-radius: 15px;
                             transform: translateX(1000px);
+
+                            @media only screen and (max-width:1220px) {
+                                justify-content: flex-start;
+                            }
 
                             .stars {
                                 display: flex;
@@ -100,6 +131,15 @@ html {
 
                     }
 
+
+                    .rate-container.top,
+                    .rate-container.center,
+                    .rate-container.bottom {
+                        @media only screen and (max-width:1220px) {
+                            justify-content: flex-start;
+                        }
+                    }
+
                     .rate-container.top {
                         justify-content: left;
 
@@ -119,10 +159,14 @@ html {
 
             }
 
-            .bottom {
+            .element.bottom {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+
+                @media only screen and (max-width:1220px) {
+                    flex-direction: column;
+                }
 
                 .opinion-container {
                     width: 25vw;
@@ -131,11 +175,20 @@ html {
                     justify-content: center;
                     transform: translateX(3000px);
 
+                    @media only screen and (max-width:1220px) {
+                        width: 80vw;
+                        align-items: center;
+                    }
+
                     .opinion-content {
                         width: 20vw;
                         height: 250px;
                         background-color: $veryDarkMagenta;
                         border-radius: 15px;
+
+                        @media only screen and (max-width:1220px) {
+                            width: 80%;
+                        }
 
                         .opinion-content-top {
                             display: flex;
@@ -181,6 +234,10 @@ html {
 
                 .opinion-container.right {
                     align-items: flex-end;
+
+                    @media only screen and (max-width:1220px) {
+                        align-items: center;
+                    }
                 }
             }
 
